@@ -1,0 +1,222 @@
+/* Reset Css */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end Reset css */
+
+:root {
+  /* primary color */
+  --DarkBlue: #2d314d;
+  --LimeGreen: #31d35c;
+  --BrightCyan: hsl(192, 70%, 51%);
+
+  /* Neutral Color */
+  --GrayishBlue: hsl(233, 8%, 62%);
+  --LightGrayishBlue: hsl(220, 16%, 96%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--VeryLightGray);
+  font-family: "Public Sans";
+  font-size: 18px;
+}
+
+.container {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+  background-color: var(--White);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlink {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navlink > a {
+  height: 100%;
+  text-align: center;
+  /* align-items: center; */
+  padding: 0 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--GrayishBlue);
+}
+
+.navlink > a:hover {
+  height: 100%;
+  color: var(--DarkBlue);
+  background-color: yellowgreen;
+}
+
+.btn-req {
+  background: rgb(49, 211, 92);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 211, 92, 1) 23%,
+    rgba(43, 183, 218, 1) 77%
+  );
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  background-color: #fafafa;
+}
+
+.hero-desc {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  flex: 1;
+  color: #abacb1;
+  font-weight: 300;
+}
+
+.hero-desc > h1 {
+  font-size: 40px;
+}
+
+.hero-img {
+  flex: 1;
+  background-color: #31d35c;
+}

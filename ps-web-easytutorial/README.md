@@ -1,4 +1,4 @@
-# E-Commerce Project
+# PS Landing Page
 
 A brief description of what this project does and who it's for
 
@@ -6,7 +6,7 @@ A brief description of what this project does and who it's for
 
 [youtube](https://www.youtube.com/watch?v=lAOkx2yZESY)
 
-[video](2:40:24)
+[video](13:18)
 
 ## Tech Stack
 

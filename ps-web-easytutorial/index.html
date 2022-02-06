@@ -9,8 +9,54 @@
     <title>PS</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="navbar">
+            <a href="#"><img width="50px" src="img/logo.png" alt="" class="logo"></a>
+            <nav>
+                <ul class="menu-list active">
+                    <li><a href="#">Game Controller</a></li>
+                    <li><a href="#">VR Accessories</a></li>
+                    <li><a href="#">Media Remotes</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="menu-mobi" onclick="toogle()"><img width="25px" src="img/menu.png" alt="" class="menu-icon"></a>
+        </div>
 
-    
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br>Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy Now <img src="img/arrow.png" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controller.png" class="controller" alt="">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="img/add.png" alt="">
+                    <p><small>Add to cart</small></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="social-link">
+            <img src="img/fb.png" alt="">
+            <img src="img/tw.png" alt="">
+            <img src="img/ig.png" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        const togel = document.querySelector(".menu-mobi")
+        const menu = document.querySelector(".menu-list")
+        togel.addEventListener('click', function(){
+            menu.classList.toggle('active');
+        })
+    </script>
+
 </body>
 </html>

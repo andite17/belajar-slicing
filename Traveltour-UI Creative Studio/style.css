@@ -313,3 +313,87 @@ section {
   width: 100%;
 }
 /* ============ End Home ======================= */
+
+/* Service Section */
+.service-wrapper {
+  /* background-color: #ffa451; */
+  margin: auto;
+}
+.row1 {
+  text-align: center;
+}
+.label-service {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--second-color);
+  margin-bottom: 10px;
+}
+.heading-service {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: var(--heading-font);
+  margin-bottom: 15px;
+}
+.subheading-service {
+  font-size: 20px;
+  font-family: var(--main-font);
+  color: #4a4a4a;
+}
+.row2 {
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  border-radius: 50px 50px 0 0;
+  padding: 0 10px;
+  margin-top: 50px;
+}
+.box-service {
+  max-width: 300px;
+  position: relative;
+  padding: 15px;
+  flex: 1;
+  text-align: center;
+}
+.box-service i {
+  font-size: 2.5rem;
+}
+.box-service h3 {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.box-service p {
+  /* font-size: 18px; */
+  /* font-weight: 400; */
+  /* font-family: var(--main-font); */
+}
+.btn-learn {
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50px 50px 0 0;
+  background-color: orange;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+  transition: 0.4s ease-in-out;
+}
+
+.box-service:hover .btn-learn {
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  transition: 0.4s ease-in-out;
+}
+.btn-learn a {
+  color: #fff;
+}
+/* =========== End Service ================= */

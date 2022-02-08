@@ -319,7 +319,7 @@ section {
   /* background-color: #ffa451; */
   margin: auto;
 }
-.row1 {
+.service-wrapper .row1 {
   text-align: center;
 }
 .label-service {
@@ -340,7 +340,7 @@ section {
   font-family: var(--main-font);
   color: #4a4a4a;
 }
-.row2 {
+.service-wrapper .row2 {
   background-color: var(--main-color);
   color: white;
   display: flex;
@@ -397,3 +397,119 @@ section {
   color: #fff;
 }
 /* =========== End Service ================= */
+
+/* Product Section */
+
+.product-wrapper {
+  margin: auto;
+}
+
+.product-wrapper .row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label-product {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--second-color);
+  margin-bottom: 20px;
+}
+.heading-product {
+  font-size: 40px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+.toggle-slider i {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.product-wrapper .row2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.product-wrapper .card-product {
+  width: 400px;
+  border-radius: 20px;
+  position: relative;
+  overflow-y: hidden;
+}
+.row2 .detail-product {
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid white;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.171);
+  background-color: #d0fcffa2;
+  transition: 0.5s ease-in-out;
+}
+.card-product:hover .detail-product {
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.kategori {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label-kategori {
+  padding: 5px 20px;
+  background-color: var(--second-color);
+  color: white;
+  border-radius: 5px;
+}
+
+.price {
+  background-color: var(--main-color);
+  font-size: 20px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-card {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--heading-font);
+  color: #4a4a4a;
+}
+.review i {
+  color: yellow;
+}
+
+.review {
+  display: flex;
+  gap: 10px;
+}
+.body-card {
+  padding: 25px 0;
+}
+.btn-product {
+  background-color: var(--second-color);
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 50px;
+}
+.btn-product a {
+  color: white;
+}
+
+/* ========= End Product ====================== */

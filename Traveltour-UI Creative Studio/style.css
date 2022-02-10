@@ -106,63 +106,6 @@ section {
   border-radius: 20px;
 }
 
-@media screen and (max-width: 991px) {
-  .nav-wrapper .menu-wrapper {
-    gap: 30px;
-  }
-  .menu {
-    gap: 20px;
-  }
-  .menu .menu-link {
-    font-size: 0.8rem;
-  }
-
-  .btn-member {
-    padding: 10px 15px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .nav-wrapper .menu-wrapper {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    display: block;
-    text-align: center;
-    padding-bottom: 3rem;
-    background-color: var(--main-color);
-    border-radius: 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    transition: 0.5s ease-in-out;
-  }
-  .nav-wrapper .menu-wrapper.active {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    transition: 0.5s ease-in-out;
-  }
-  .menu {
-    display: block;
-    padding-bottom: 10px;
-  }
-  .menu-toggle.bx-x {
-    transform: rotate(360deg);
-    transition: 0.5s;
-  }
-  .menu-item {
-    margin: 20px 0;
-  }
-  .menu-item .menu-link {
-    color: white;
-  }
-  .menu-toggle {
-    display: initial;
-    font-size: 2rem;
-    color: var(--main-color);
-    cursor: pointer;
-  }
-}
-
 /* ============= End Navbar ================*/
 
 /* Home Section */
@@ -562,15 +505,20 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 100px;
 }
 
 .content-img {
-  max-width: 500px;
+  width: 400px;
 }
 
 .content-img img {
   width: 100%;
+}
+
+.content-statistic {
+  width: 600px;
 }
 
 .content-statistic .label-statistic {
@@ -617,3 +565,147 @@ section {
   font-weight: 600;
 }
 /* ======== End Statistic ============= */
+
+/* Testimonial Section */
+.testi-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testi-wrapper .col-heading {
+  width: 500px;
+}
+.label-testi {
+  font-size: 20px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: var(--second-color);
+  margin-bottom: 45px;
+}
+
+.heading-testi {
+  font-size: 30px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-bottom: 50px;
+}
+
+.subheading-testi {
+  font-size: 15px;
+  font-family: var(--main-font);
+}
+
+.testi-wrapper .col-slider-testi {
+  width: 600px;
+}
+
+.card-testi {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.131);
+  padding: 30px;
+  text-align: center;
+}
+
+.text-testi {
+  padding: 20px;
+  position: relative;
+  width: 70%;
+  margin: auto;
+}
+.text-testi .bxs-quote-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.text-testi .bxs-quote-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.card-testi .status {
+  color: var(--second-color);
+  margin-top: 5px;
+}
+
+/* ========= End Testimonial */
+
+@media screen and (max-width: 991px) {
+  .nav-wrapper .menu-wrapper {
+    gap: 30px;
+  }
+  .menu {
+    gap: 20px;
+  }
+  .menu .menu-link {
+    font-size: 0.8rem;
+  }
+
+  .btn-member {
+    padding: 10px 15px;
+  }
+
+  .content-img {
+    margin: auto;
+  }
+
+  .content-statistic {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .nav-wrapper .menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+    background-color: var(--main-color);
+    border-radius: 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s ease-in-out;
+  }
+  .nav-wrapper .menu-wrapper.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 0.5s ease-in-out;
+  }
+  .menu {
+    display: block;
+    padding-bottom: 10px;
+  }
+  .menu-toggle.bx-x {
+    transform: rotate(360deg);
+    transition: 0.5s;
+  }
+  .menu-item {
+    margin: 20px 0;
+  }
+  .menu-item .menu-link {
+    color: white;
+  }
+  .menu-toggle {
+    display: initial;
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+
+  /* statistic */
+  .content-img {
+    margin: auto;
+  }
+
+  /* testi */
+  .testi-wrapper {
+    margin: auto;
+    gap: 50px;
+    /* margin-bottom: 50px; */
+  }
+}

@@ -477,7 +477,7 @@ section {
   font-family: var(--heading-font);
 }
 
-.content h3 {
+.banner h3 {
   font-size: 20px;
   font-family: var(--main-font);
   font-weight: 600;
@@ -632,6 +632,63 @@ section {
 }
 
 /* ========= End Testimonial */
+
+/* Banner 2 */
+
+.banner2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--second-color);
+  border-radius: 20px;
+  padding: 50px 100px;
+  margin: 200px auto;
+}
+
+.banner2 .content {
+  text-align: left;
+  width: 600px;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.banner2 .heading {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 800;
+  color: #292929;
+}
+
+.banner2 p {
+  font-family: var(--heading-font);
+  font-size: 20px;
+  color: #292929;
+  margin-bottom: 30px;
+}
+
+.banner2 .content h3 {
+  display: inline;
+  background-color: #284f9d54;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+.banner2 .btn-regis {
+  padding: 20px 40px;
+  background-color: var(--main-color);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.banner2 .btn-regis a {
+  color: white;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  font-size: 20px;
+}
+/* ========= End Banner 2 ============= */
 
 @media screen and (max-width: 991px) {
   .nav-wrapper .menu-wrapper {

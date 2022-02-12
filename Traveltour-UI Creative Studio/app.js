@@ -29,3 +29,13 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".bxs-chevron-left-circle",
   },
 });
+
+var swiper = new Swiper(".mySwipertesti", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+});

@@ -690,6 +690,111 @@ section {
 }
 /* ========= End Banner 2 ============= */
 
+
+/* Footer Section */
+
+.footer-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.col1-footer .heading{
+  font-family: var(--heading-font);
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.col1-footer .heading span{
+  color: var(--second-color);
+  font-size: 30px;
+}
+
+.col1-footer .subheading{
+  color: #4a4a4a;
+  font-family: var(--heading-font);
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 45px;
+}
+
+.sosmed{
+  display: flex;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.sosmed i{
+  font-size: 2.4rem;
+  color: var(--main-color);
+}
+
+.copy{
+  font-family: var(--heading-font);
+  font-size: 12px;
+}
+
+.col2-footer{
+  align-items: center;
+}
+
+.col2-footer h3, .col3-footer h3, .col4-footer h3, .col5-footer h3{
+  font-size: 25px;
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+.col2-footer ul, .col3-footer ul, .col4-footer ul {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.col2-footer ul li, .col3-footer ul li, .col4-footer ul li{
+  margin-top: 15px;
+}
+.col2-footer li a, .col3-footer li a, .col4-footer li a{
+  color: black;
+  font-size: 15px;
+  font-family: var(--heading-font);
+  font-weight: 400;
+}
+
+.col5-footer p{
+  color: black;
+  font-size: 15px;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.input-email{
+  background-color: white;
+  padding: 18px 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.input-email input{
+  border: none;
+  font-size: 13px;
+  font-family: var(--heading-font);
+  font-weight: 300;
+  width: 180px;
+  height: 20px;
+  letter-spacing: 2px;
+}
+
+.input-email button{
+  border: none;
+  padding: 10px 25px;
+  background-color: var(--second-color);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ========= End FOoter =========== */
+
 @media screen and (max-width: 991px) {
   .nav-wrapper .menu-wrapper {
     gap: 30px;
